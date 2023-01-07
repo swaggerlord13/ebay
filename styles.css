@@ -6,6 +6,7 @@ body {
 @media screen and (max-width: 1200px) {
     body {
         max-width: 95%;
+        margin: auto;
     }
 }
 .header{
@@ -48,8 +49,12 @@ h3 {
 }
 
 .form {
-    margin-top: 3rem;
-
+    margin-top: 3rem;   
+}
+@media screen and (max-width: 1200px) {
+    .form {
+        margin-top: 1rem;
+    }
 }
 
 .form label {
@@ -67,15 +72,14 @@ h3 {
 }
 
 .form input {
-    width: 100%;
+    width: 98%;
     display: inline-block;
     margin: auto;
     margin-bottom: .3rem;
     background-color: #EDEDED;
     font-size: 12px;
     font-weight: normal;
-    border: solid  #0000ff ;
-    border-width: 0.1rem;
+    border: none;
     border-radius: .3rem;
     height: 2.2rem;
 }
@@ -105,7 +109,7 @@ h3 {
 @media screen and (max-width: 1200px) {
     .form button {
         font-size: 1rem;
-        height: 2rem;
+        height: 2.5rem;
         width: 100%;
     }
 }
