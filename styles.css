@@ -88,14 +88,19 @@ h3 {
     color: red;
 }
 
-.aria {
+#aria {
     display: inline-block;
     background-color: #F9E4E8;
     color: #E04562;
-    width: 100%;
+    width: 98%;
+    margin: auto;
     margin-bottom: 1rem;
-    opacity: 0;
-    height: 0;
+}
+#opps {
+    display: inline-block;
+    color: #E04562;
+    font-size: 1rem;
+    
 }
 .form button {
     width: 10%;
