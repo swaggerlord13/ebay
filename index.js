@@ -16,19 +16,3 @@ function opps() {
     opps.innerHTML = "opps you have entered an invalid code";
 }
 
-function validation() {
-    var form = document.getElementById("form");
-    var enterCode = document.getElementById("enter-code").value;
-    var aria = document.getElementById("aria");
-    if (enterCode.length == 0){
-        form.classList.add("invalid");
-        form.classList.remove("valid");
-        aria.innerHTML = "code is required to check balance";
-        aria.style.padding = "5px";
-    } else  {
-        form.classList.add("valid");
-        form.classList.remove("invalid");
-        aria.innerHTML = "";
-        aria.style.padding = "";
-    }
-}

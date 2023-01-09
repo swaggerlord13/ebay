@@ -9,6 +9,9 @@ body {
         margin: auto;
     }
 }
+a {
+    text-decoration: none;
+}
 .header{
     text-align: left;
     display: block;
@@ -121,13 +124,13 @@ h3 {
 p {
     margin-top: 3.2rem;
     color: #838586;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 @media screen and (max-width: 1200px) {
     P {
         font-size: .8rem;
         margin-top: 1.5rem;
-        font-weight: bold;
+        font-weight: normal;
         color:  #777771;
     }
     
